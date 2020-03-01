@@ -1,0 +1,122 @@
+<!-- done by Hariharan -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Login</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/ourStyle.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Start your project here-->
+
+
+<!-- Header Start --> 
+<!--Navbar-->
+
+
+
+<br/><br/>
+
+
+
+<!-- Content Start -->
+<div style = "width: 100%; height: 100%; padding-left: 20px; padding-bottom: 10px; padding-right: 20px;">
+    <!-- Default form login -->
+    <div class = "container text-center">
+      <form class="text-center border border-light p-5" action="index.html" style = "width: 80%; margin-left: 10%;">
+
+        <p class="h4 mb-4">Logon to topjobs</p>
+
+        <!-- Email -->
+        <input type="text" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="User Name">
+
+        <!-- Password -->
+        <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+
+        <div class="d-flex justify-content-around">
+            <div>
+                <!-- Remember me -->
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                    <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                </div>
+            </div>
+            <div>
+                <!-- Forgot password -->
+                <a href="" class = "text-danger">Forgot password?</a>
+            </div>
+        </div>
+
+        <!-- Sign in button -->
+        <button class="red darken-1 btn btn-info my-4" type="submit" onclick = "trigger()">Login</button>
+
+        <!-- Register -->
+        <p>Don't have a topjobs account?
+            <a href="" class = "text-danger">Register</a>
+        </p>
+
+        <!-- Social login -->
+        <p>or logon with:</p>
+
+        <a type="button" class="light-blue-text mx-2">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a type="button" class="light-blue-text mx-2">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a type="button" class="light-blue-text mx-2">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a type="button" class="light-blue-text mx-2">
+            <i class="fab fa-github"></i>
+        </a>
+
+      </form>
+  <!-- Default form login -->
+  </div>
+</div>
+<!-- Content Finish -->
+
+<br/>
+
+
+
+
+
+
+
+
+
+  <!-- Start your project here-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>
+
+<script type="text/javascript">
+  function trigger(){
+    alert("You have successfully logged in!!!");
+  }
+</script>

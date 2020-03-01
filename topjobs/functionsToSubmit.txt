@@ -1,0 +1,46 @@
+hari
+security policy - done
+faq - done
+my profile - done - hardcode done
+login - done no hard code
+"Adjust according to chamika"
+
+lakshi
+Home - index.html - done
+Media Rooms - media.html - done
+LMI - lmi.html - done
+"Need one"
+
+shal
+Post your vacancy - Advertise - vacancy.html - done
+register - done
+rsi
+
+
+ishara
+featured employers - "content filter" - back end not done
+privacy policy - privacy.html - done
+Partners - partners.html - no done
+
+
+kavi
+T&C - tnc.html - done
+contact.html
+supp - done - no back
+
+
+
+
+
+
+
+--------------------
+additional
+http://topjobs.lk/do.landing?CO=AD	
+	by a public sector employer - 1
+	by a leading private sector employer - 2
+
+http://topjobs.lk/for_employers.jsp - 3
+
+Home
+	cafe - 4

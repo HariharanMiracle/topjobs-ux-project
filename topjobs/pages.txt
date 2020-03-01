@@ -1,0 +1,28 @@
+Home - index.html $$$$$
+Post your vacancy - Advertise - vacancy.html
+Featured Employees - featured.html
+T&C - tnc.html
+privacy policy - privacy.html
+Security Policy - security.html $$$$$
+FAQ - faq.html $$$$$
+Media Rooms - media.html
+Partners - partners.html
+LMI - lmi.html
+About-Us - about.html
+Contact-Us - contact.html
+
+
+
+
+
+Not in header or footer
+Register - register.html $$$$$
+Login - login.html $$$$ Back done
+My Profile - profile.html $$$$
+
+
+*Dint do
+New addvertisement - Hard Code
+feed back
+support
+--------------------------------

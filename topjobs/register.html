@@ -1,0 +1,193 @@
+<!-- done by Shalini -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>TopJobs</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/ourStyle.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Start your project here-->
+
+
+
+
+
+
+<!-- Content Start -->
+
+<!-- Content Finish -->
+
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+<div class = "container text-center">
+
+<div class = "row">
+  <!-- Default form register -->
+<form class="text-center border border-light p-5" action="index.html" style = "width: 80%; margin-left: 10%" onsubmit="return validate()">
+
+    <p class="h4 mb-4">Create An Account</p>
+
+    <Label>User Name</Label><input type="text" id = "username" class="form-control mb-4" required>
+    <small class="form-text text-muted mb-4 text-danger"><p id = "unHelpBlock"></p>
+    </small>
+
+    <!-- Password -->
+    <Label>Password</Label><input type="password" id="defaultRegisterFormPassword" class="form-control" required aria-describedby="defaultRegisterFormPasswordHelpBlock">
+    <small class="form-text text-muted mb-4 text-danger">
+        <p id = "defaultRegisterFormPasswordHelpBlock"></p>
+    </small>
+
+    <!-- Confirm Password -->
+    <Label>Confirm Password</Label><input type="password" id="confirmRegisterFormPassword" class="form-control" required aria-describedby="defaultRegisterFormPasswordHelpBlock" required>
+    <small class="form-text text-muted mb-4 text-danger">
+        <p id="defaultRegisterFormPasswordHelpBlock"></p>
+    </small>
+
+    <!-- E-mail -->
+    <Label>E-mail</Label><input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" required>
+    <small class="form-text text-muted mb-4 text-danger">
+        <p id="defaultRegisterFormEmailHelpBlock"></p>
+    </small>
+
+    <!-- Confirm E-mail -->
+    <Label>Confirm E-mail</Label><input type="email" id="confirmRegisterFormEmail" class="form-control mb-4" required>
+
+    <br/>
+      <h5 class = "article__content text-danger text-left" style = "font-size: 12px;"><i><b>If you forget your password</b></i></h5>
+
+    <Label>Secret Question</Label><select id = "secretQuestion" class="form-control mb-4">
+      <option value = "">What is your all-time favourite sport team?</option>
+      <option value = "">What is your favourite past time?</option>
+      <option value = "">What is your system generated username?</option>
+      <option value = "">What make was your first car or bike?</option>
+      <option value = "">What was the name of your school</option>
+    </select>
+
+    <Label>Secret Answer</Label><input type="text" id = "secretAnswer" class="form-control mb-4" required>
+    
+
+    <!-- Sign up button -->
+    <button class="red darken-1 btn btn-info my-4" type="submit">Create Account</button>
+
+    <!-- Social register -->
+    <p>or sign up with:</p>
+
+    <a type="button" class="light-blue-text mx-2">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a type="button" class="light-blue-text mx-2">
+        <i class="fab fa-twitter"></i>
+    </a>
+    <a type="button" class="light-blue-text mx-2">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a type="button" class="light-blue-text mx-2">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <hr>
+
+    <!-- Terms of service -->
+    <p>By clicking
+        <em>Sign up</em> you agree to our
+        <a href="" class = "text-danger" target="_blank">terms of service</a>
+
+</form>
+<!-- Default form register -->
+</div>
+
+</div>
+
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Start your project here-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script>
+
+    function validate(){
+        var username = document.getElementById("username").value;
+        var dRFP = document.getElementById("defaultRegisterFormPassword").value;
+        var cRFP = document.getElementById("confirmRegisterFormPassword").value;
+        var dRFE = document.getElementById("defaultRegisterFormEmail").value;
+        var cRFE = document.getElementById("confirmRegisterFormEmail").value;
+        var secretAnswer = document.getElementById("secretAnswer").value;
+        var letters = /^[A-Za-z]+$/;
+
+        if(username.length > 8){
+          document.getElementById("unHelpBlock").innerHTML = "";
+          if(dRFP.length > 8){
+            document.getElementById("defaultRegisterFormPasswordHelpBlock").innerHTML = "";
+            if(dRFP == cRFP){
+              document.getElementById("defaultRegisterFormPasswordHelpBlock").innerHTML = "";
+              if(dRFE == cRFE){
+                document.getElementById("defaultRegisterFormEmailHelpBlock").innerHTML = "";
+                alert("Successfully Created An Account...")
+                return true;
+              }
+              else{
+                document.getElementById("defaultRegisterFormEmailHelpBlock").innerHTML = "Email mismatch.";
+                return false;
+              }
+            }
+            else{
+              document.getElementById("defaultRegisterFormPasswordHelpBlock").innerHTML = "Password mismatch.";
+              return false;
+            }
+          }
+          else{
+            document.getElementById("defaultRegisterFormPasswordHelpBlock").innerHTML = "Password length should be more than 8.";
+            return false;
+          }
+        }
+        else{
+          document.getElementById("unHelpBlock").innerHTML = "Username length should be more than 8.";
+          return false;
+        }
+    }
+  </script>
+</body>
+
+</html>
